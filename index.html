@@ -1,0 +1,72 @@
+<HTML>
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <center>
+      <H1 id="title">freeCodeCamp Survey Form</H1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <label id="name-label">Name</lable><br>
+        <input type='text' placeholder='Enter your name' id='name' required><br><br>
+        <label id="email-label">Email</label><br>
+        <input type='email' placeholder='Enter your Email' id='email' required><br><br>
+        <label id="number-label">Age <i>(optional)</i></label><br>
+        <input type='number' placeholder='Age' min='16' max='120' id='number'><br><br>
+        <label>Which option best describes your current role?</label><br>
+        <select id="dropdown">
+          <option value='' disabled selected hidden>Select An Option</option>
+          <option value='student'>Student</option>
+          <option value='full-time-job'>Full Time Job</option>
+          <option value='full-time-learner'>Full Time Learner</option><br>
+          <option value='prefer-not-to-say'>Prefer Not To Say</option><br>
+          <option value='other'>Other</option>
+        </select>
+        <br><br>
+        
+        <label>Would you recommend freeCodeCamp to a friend?</label><br>
+        <input type='radio' value='Definitely' name='recommend' checked>
+        <label>Definitely</label><br>
+        <input type='radio' value='Maybe' name='recommend'>
+        <label>Maybe</label><br>
+        <input type='radio' value='not-sure' name='recommend'>
+        <label>Not Sure</label>
+        <br><br>
+        
+        <label>What is your favorite feature of freeCodeCamp?</label><br>
+        <select id="dropdown">
+          <option value='' disabled selected hidden>Select An Option</option>
+          <option value='student'>Challenges</option>
+          <option value='full-time-job'>Project</option>
+          <option value='full-time-learner'>Community</option><br>
+          <option value='prefer-not-to-say'>Opensource</option><br>
+          <option value='other'>Other</option>
+        </select>
+        <br><br>
+        
+        <label>What would you like to see improved? <i>(Check all that apply)</i></label><br>
+        <input type='checkbox' value='recom1' name='improv'>
+        <label>Front-end Projects</label><br>
+        <input type='checkbox' value='recom2' name='improv'>
+        <label>Back-end Projects</label><br>
+        <input type='checkbox' value='recom3' name='improv'>
+        <label>Data Visualization</label><br><input type='checkbox' value='recom4' name='improv'>
+        <label>Challenges</label><br><input type='checkbox' value='recom5' name='improv'>
+        <label>Open Source Community</label><br><input type='checkbox' value='recom6' name='improv'>
+        <label>Gitter help rooms</label><br><input type='checkbox' value='recom7' name='improv'>
+        <label>Videos</label><br><input type='checkbox' value='recom8' name='improv'>
+        <label>City Meetups</label><br><input type='checkbox' value='recom9' name='improv'>
+        <label>Wiki</label><br><input type='checkbox' value='recom10' name='improv'>
+        <label>Forum</label><br><input type='checkbox' value='recom11' name='improv'>
+        <label>Additional Courses</label><br><br>
+        
+        <label>Any comments or suggestions?</label><br>
+        <textarea placeholder='Enter your comments here..' id='commbox'></textarea><br>
+        <button type='submit' id='submit'>Sbumit</button>
+      </form>
+      </center>
+    </body>
+  </HTML>
